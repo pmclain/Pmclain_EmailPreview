@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <Pmclain_EmailPreview>
+      <active>true</active>
+      <codePool>local</codePool>
+    </Pmclain_EmailPreview>
+  </modules>
+</config>

@@ -27,7 +27,6 @@ class Pmclain_EmailPreview_Model_Observer
           $fieldData
         );
       }
-      $test = null;
     }
   }
 
@@ -111,6 +110,8 @@ class Pmclain_EmailPreview_Model_Observer
         return Mage::getModel('sales/order_invoice')->getCollection()->getFirstItem()->getIncrementId();
       case 'shipment':
         return Mage::getModel('sales/order_shipment')->getCollection()->getFirstItem()->getIncrementId();
+      case 'creditmemo':
+        return Mage::getModel('sales/order_creditmemo')->getCollection()->getFirstItem()->getIncrementId();
       case 'customer':
         return Mage::getModel('customer/customer')->getCollection()->getFirstItem()->getEmail();
     }

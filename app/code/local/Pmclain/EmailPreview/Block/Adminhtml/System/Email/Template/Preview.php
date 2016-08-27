@@ -107,6 +107,8 @@ class Pmclain_EmailPreview_Block_Adminhtml_System_Email_Template_Preview extends
         return Mage::getModel('sales/order_invoice')->loadByIncrementId($value);
       case 'shipment':
         return Mage::getModel('sales/order_shipment')->loadByIncrementId($value);
+      case 'creditmemo':
+        return Mage::getModel('pmclain_emailpreview/sales_order_creditmemo')->loadByIncrementId($value);
     }
     return null;
   }

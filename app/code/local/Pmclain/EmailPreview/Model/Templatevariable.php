@@ -86,15 +86,15 @@ class Pmclain_EmailPreview_Model_Templatevariable extends Pmclain_EmailPreview_M
   protected function getFieldValue($var) {
     switch ($var) {
       case 'order':
-        return Mage::getModel('sales/order')->getCollection()->getFirstItem()->getIncrementId();
+        return Mage::getModel('sales/order')->getCollection()->setPageSize(1)->setCurPage(1)->getFirstItem()->getIncrementId();
       case 'invoice':
-        return Mage::getModel('sales/order_invoice')->getCollection()->getFirstItem()->getIncrementId();
+        return Mage::getModel('sales/order_invoice')->getCollection()->setPageSize(1)->setCurPage(1)->getFirstItem()->getIncrementId();
       case 'shipment':
-        return Mage::getModel('sales/order_shipment')->getCollection()->getFirstItem()->getIncrementId();
+        return Mage::getModel('sales/order_shipment')->getCollection()->setPageSize(1)->setCurPage(1)->getFirstItem()->getIncrementId();
       case 'creditmemo':
-        return Mage::getModel('sales/order_creditmemo')->getCollection()->getFirstItem()->getIncrementId();
+        return Mage::getModel('sales/order_creditmemo')->getCollection()->setPageSize(1)->setCurPage(1)->getFirstItem()->getIncrementId();
       case 'customer':
-        return Mage::getModel('customer/customer')->getCollection()->getFirstItem()->getEmail();
+        return Mage::getModel('customer/customer')->getCollection()->setPageSize(1)->setCurPage(1)->getFirstItem()->getEmail();
     }
     return 'i am broken';
   }

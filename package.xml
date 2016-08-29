@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>Pmclain_EmailPreview</name>
+    <version>0.0.2</version>
+    <stability>beta</stability>
+    <license uri="https://www.gnu.org/licenses/gpl.txt">GNU GENERAL PUBLIC LICENSE Version 3</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Provides more accurate email preview by populating many standard template variables.</summary>
+    <description>Populates variables into email template previews. When editing previously saved email templates, the module will add fields for store, customer email, order, invoice, creditmemo and shipment increment ids. These fields will prepopulate with the last created instance of each.</description>
+    <notes>Updated package php requirements.</notes>
+    <authors><author><name>Patrick McLain</name><user>pmclain</user><email>pat@pmclain.com</email></author></authors>
+    <date>2016-08-27</date>
+    <time>19:18:59</time>
+    <contents><target name="magelocal"><dir name="Pmclain"><dir name="EmailPreview"><dir name="Block"><dir name="Adminhtml"><dir name="System"><dir name="Email"><dir name="Template"><file name="Preview.php" hash="8561bc41b02b988393c441ab7932043e"/></dir></dir></dir></dir></dir><dir name="Helper"><file name="Data.php" hash="efa340158356da479600a49b51b1baff"/></dir><dir name="Model"><file name="Abstract.php" hash="ff7af53b014fe43bc7d430b7773b8f29"/><dir name="Adminhtml"><dir name="System"><dir name="Config"><dir name="Source"><file name="Store.php" hash="9126ba28a4e57ca39fc325137d26a01f"/></dir></dir></dir></dir><file name="Observer.php" hash="6749f49a88e04660a8843977b5ec4d44"/><dir name="Sales"><dir name="Order"><file name="Creditmemo.php" hash="9372154b9dcf0a8649c76dec8e015954"/></dir></dir><file name="Templatevariable.php" hash="2a83d7fc660d2cd27a0b4b3e97695f4d"/></dir><dir name="etc"><file name="config.xml" hash="6a8fdd84fa0a0b4e2147ddb7d40e352e"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Pmclain_EmailPreview.xml" hash="d580aa178e1d9fca45d6caf40a9da3ed"/></dir></target><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="layout"><file name="pmclain_emailpreview.xml" hash="d517ecb23c20b75445b1d55545152b63"/></dir></dir></dir></dir></target><target name="mage"><dir name="js"><dir name="pmclain"><file name="emailpreview.js" hash="8b39eb7572be6961888e20e17b2bd08a"/></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.3.0</min><max>6.0.0</max></php></required></dependencies>
+</package>
